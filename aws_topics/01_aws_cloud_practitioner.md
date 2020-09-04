@@ -81,5 +81,6 @@ C:\Users\DON>
   ## Responsibily of IAM user
   * Users, groups, roles , policies managament and monitoring
   * MFA for all accounts
+  * Don't share the access key or IAM user id
 
 
