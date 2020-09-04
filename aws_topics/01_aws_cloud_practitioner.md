@@ -70,3 +70,16 @@ C:\Users\DON>
   1. Access advisor shows the service permissions granted to a user and when those services were last accessed
   2. You can use this information to revise your policies.
 
+  # IAM Gudiliness & Best practice
+  * Don't use the root account except for AWS account setup
+  * One physical user = One aws user
+  * Assign users to groups and assign permission to user
+  * MFA is must
+  * use access key fpor pragramatic acces
+  * Never share IAm key and acces key
+
+  ## Responsibily of IAM user
+  * Users, groups, roles , policies managament and monitoring
+  * MFA for all accounts
+
+
