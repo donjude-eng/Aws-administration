@@ -36,18 +36,6 @@ Default region name [None]: ap-south-1
 Default output format [None]:
 
 C:\Users\DON> aws iam list-users
-{
-    "Users": [
-        {
-            "Path": "/",
-            "UserName": "Don_Jude",
-            "UserId": "AIDAS5KIZCDE567AMEXBQ",
-            "Arn": "arn:aws:iam::200405487817:user/Don_Jude",
-            "CreateDate": "2020-09-04T15:56:56+00:00",
-            "PasswordLastUsed": "2020-09-04T16:09:12+00:00"
-        }
-    ]
-}
 
 
 C:\Users\DON>
