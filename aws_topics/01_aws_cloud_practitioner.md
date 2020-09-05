@@ -24,21 +24,6 @@
 3. A region is a cluster of data centers
 4. Most AWS services are region-scoped
 
-## AWS IAM user
-```
-C:\Users\DON>aws --version
-aws-cli/2.0.46 Python/3.7.7 Windows/10 exe/AMD64
-
-C:\Users\DON>aws configure
-AWS Access Key ID [None]: AKIAS5KIZCDEQQTA4NL6
-AWS Secret Access Key [None]: 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
-Default region name [None]: ap-south-1
-Default output format [None]:
-
-C:\Users\DON> aws iam list-users
-C:\Users\DON>
-```
-
 # IAM Roles and services
 * Some AWS service will need to perform action on our behalf
 * To do so, we will assign permissions to AWS services with IAM roles
