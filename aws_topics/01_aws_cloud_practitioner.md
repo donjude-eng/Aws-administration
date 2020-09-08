@@ -108,3 +108,8 @@
 * Dedicated Hosts
 * ![Linux Directories](reservedinstance.PNG?raw=true "Title")
 
+# EBS Volume
+* General purpose SSD volume that balances price and performance for a wide variety of workloads
+* Ebs volume has to be created in Root user.
+* Go to >> EC2 intance >> Elastic block store >> Volumes >> Create volume >> Once volume is created 
+* >> Attach Volume >> 
