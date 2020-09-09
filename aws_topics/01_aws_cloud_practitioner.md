@@ -106,21 +106,54 @@
 * Reserved instances --Long workload
 * Spot instances : Short workload, cheap, Can lose instances.
 * Dedicated Hosts
-<<<<<<< HEAD
+
+# Reserved instances
 ![Aws ](reservedinstance.PNG?raw=true "Title")
-=======
-* ![Linux Directories](reservedinstance.PNG?raw=true "Title")
->>>>>>> 11409ab81b493083c69b78b8aeeeb4293afc46e1
+
 
 # EBS Volume
 * General purpose SSD volume that balances price and performance for a wide variety of workloads
 * Ebs volume has to be created in Root user.
-<<<<<<< HEAD
 * Go to >> EC2 intance >> Elastic block store >> Volumes >> Create volume >> Once volume is created
 * >> Attach Volume >>
 * Ebs volume can be setup only at the specific avilablity Zone.
 * Delete the EBS existing ebs volume and terminate the ec2 instance that will automatically removes the Ebs volume of the said instance.
-=======
-* Go to >> EC2 intance >> Elastic block store >> Volumes >> Create volume >> Once volume is created 
-* >> Attach Volume >> 
->>>>>>> 11409ab81b493083c69b78b8aeeeb4293afc46e1
+* Go to >> EC2 intance >> Elastic block store >> Volumes >> Create volume >> Once volume is created
+* >> Attach Volume >>
+
+# AMI Overview
+* AMI = Amazon machine Image
+* AMI are a customization of an EC@ instance
+  1. You add your own software, configuration, operarting system, monitoring
+  2. Faster boot/ configuration time becuase all your software is pre-packaged
+* AMI are built for a specific region (and can be copied accross regions)
+* You can luanuch EC@ instances from ;
+  1. A public AMI: AWS provided
+  2. Your own AMI: you make and maintain sef.
+  3. An AWS marketplace AMI: an AMI someone else made (and potentially sells)
+
+## Creation of AMI
+* first launch an instance > go to instance > right click > image > create image > give an image name > create image
+* We can create ec2 instance from AMI's
+
+## EC2 instance Store
+* EBS volumes are network drives with good but "limited" performance
+* If you need a high performance harddisk.
+
+## EFS - Elastic File System
+* It's a third type of storage that can be attched to the EC2 instance.
+* Can be attched to the 100 of file system.
+* EFS works with linux EC2 instances in multi - AZ.
+* Highly available, scalable, expensive (3 x to the gp2), pay per use, n0 capacity planning.
+
+![AWs Directories](aef.PNG.PNG?raw=true "Title")
+
+## Shared responsibility model for ec2 storage.
+* AWS
+ 1. Infrastructure
+ 2. Replication for data for EBS volumes & EFS drives.
+ 3. Replacing faulty hardware.
+
+
+
+
