@@ -16,7 +16,7 @@
 * launched in 2002
 * Aws has 216 points of presensse (205 Edge Locations & || Regional caches) in 84 cities across 42 Countries.
 
- ![aws_topics](regionscope.PNG?raw=true "Title")
+![aws_topics](regionscope.PNG?raw=true "Title")
 
 ## AWS Regions
 1. AWS has regions all around the world
@@ -75,7 +75,7 @@
   6. Firewall rules: security group
 
 # EC2 samples
-* ![Linux Directories](ec2samples.PNG?raw=true "Title")
+![Linux Directories](ec2samples.PNG?raw=true "Title")
 
 # Hands-On EC2->
 * We'll be launching a virtual server using aws console.
@@ -106,5 +106,12 @@
 * Reserved instances --Long workload
 * Spot instances : Short workload, cheap, Can lose instances.
 * Dedicated Hosts
-* ![Linux Directories](reservedinstance.PNG?raw=true "Title")
+![Aws ](reservedinstance.PNG?raw=true "Title")
 
+# EBS Volume
+* General purpose SSD volume that balances price and performance for a wide variety of workloads
+* Ebs volume has to be created in Root user.
+* Go to >> EC2 intance >> Elastic block store >> Volumes >> Create volume >> Once volume is created
+* >> Attach Volume >>
+* Ebs volume can be setup only at the specific avilablity Zone.
+* Delete the EBS existing ebs volume and terminate the ec2 instance that will automatically removes the Ebs volume of the said instance.
