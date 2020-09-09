@@ -106,12 +106,21 @@
 * Reserved instances --Long workload
 * Spot instances : Short workload, cheap, Can lose instances.
 * Dedicated Hosts
+<<<<<<< HEAD
 ![Aws ](reservedinstance.PNG?raw=true "Title")
+=======
+* ![Linux Directories](reservedinstance.PNG?raw=true "Title")
+>>>>>>> 11409ab81b493083c69b78b8aeeeb4293afc46e1
 
 # EBS Volume
 * General purpose SSD volume that balances price and performance for a wide variety of workloads
 * Ebs volume has to be created in Root user.
+<<<<<<< HEAD
 * Go to >> EC2 intance >> Elastic block store >> Volumes >> Create volume >> Once volume is created
 * >> Attach Volume >>
 * Ebs volume can be setup only at the specific avilablity Zone.
 * Delete the EBS existing ebs volume and terminate the ec2 instance that will automatically removes the Ebs volume of the said instance.
+=======
+* Go to >> EC2 intance >> Elastic block store >> Volumes >> Create volume >> Once volume is created 
+* >> Attach Volume >> 
+>>>>>>> 11409ab81b493083c69b78b8aeeeb4293afc46e1
