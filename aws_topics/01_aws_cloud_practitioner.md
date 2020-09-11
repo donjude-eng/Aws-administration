@@ -154,6 +154,11 @@
  2. Replication for data for EBS volumes & EFS drives.
  3. Replacing faulty hardware.
 
-
+## Client responsibilty ;
+* Setting up backup / snapshot procedures
+* Setting up data encryption
+* Responsiblity of any data on the drives
+* Understanding the risk of using EC
+* instances Store
 
 
