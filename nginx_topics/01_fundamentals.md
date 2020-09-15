@@ -52,3 +52,39 @@ Start NGINX:
 $ sudo service nginx start
 Continue to Opening Your Web Page.
 ```
+
+* The way nginx and its modules work is determined in the configuration file. By default, the configuration file is named nginx.conf and placed in the directory /usr/local/nginx/conf, /etc/nginx, or /usr/local/etc/nginx.
+
+# Reference to static web hosting in nginx server
+* https://medium.com/@jasonrigden/how-to-host-a-static-website-with-nginx-8b2dd0c5b301
+
+# Rewrite and return command in nginx
+```
+events {
+}
+
+http {
+
+  include mime.types;
+
+  server {
+
+    listen 80;
+    server_name 13.233.129.142;
+
+    root /sites/demo/data/demo-site;
+
+    rewrite ^/user/(\w+) /greet/$1 last;
+    rewrite ^/greet/john /thumb.png;
+
+    location /greet {
+
+      return 200 "Hello User";
+    }
+
+    location = /greet/john {
+      return 200 "Hello John";
+    }
+  }
+}
+```
