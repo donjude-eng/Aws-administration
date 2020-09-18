@@ -216,3 +216,40 @@ http {
 * And finally, install Certbot’s Nginx package with apt-get.
 
 ```sudo apt-get install python-certbot-nginx```
+
+* In nginx there will be one master process and two worker process
+
+* Here are a few examples of chmod usage with numbers (try these out on your system).
+
+* First create some empty files:
+
+1. user@host:/home/user$ touch file1 file2 file3 file4
+2. user@host:/home/user$ ls -l
+```
+total 0
+-rw-r--r--  1 user user 0 Nov 19 20:13 file1
+-rw-r--r--  1 user user 0 Nov 19 20:13 file2
+-rw-r--r--  1 user user 0 Nov 19 20:13 file3
+-rw-r--r--  1 user user 0 Nov 19 20:13 file4
+Add owner execute bit:
+
+user@host:/home/user$ chmod 744 file1
+user@host:/home/user$ ls -l file1
+-rwxr--r--  1 user user 0 Nov 19 20:13 file1
+Add other write & execute bit:
+
+user@host:/home/user$ chmod 647 file2
+user@host:/home/user$ ls -l file2
+-rw-r--rwx  1 user user 0 Nov 19 20:13 file2
+Remove group read bit:
+
+user@host:/home/user$ chmod 604 file3
+user@host:/home/user$ ls -l file3
+-rw----r--  1 user user 0 Nov 19 20:13 file3
+Add read, write and execute to everyone:
+
+user@host:/home/user$ chmod 777 file4
+user@host:/home/user$ ls -l file4
+-rwxrwxrwx  1 user user 0 Nov 19 20:13 file4
+user@host:/home/user$
+```
