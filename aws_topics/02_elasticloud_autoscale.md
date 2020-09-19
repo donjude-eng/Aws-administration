@@ -30,3 +30,16 @@
     1. Application load balanncer (HTTP / HTTPS)
     2. Network load balancer (allows TCP, ultra high performane)
     3. Classic Load Balancer (slowly retiring)
+
+* We can use this command to make a dummmy webserver.
+```
+#!/bin/bash
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+```
+AMIs that are eligible for the AWS Free Tier are marked in the Amazon EC2 Launch Wizard as Free tier eligible. The AWS Free Tier allotment for Linux and Microsoft Windows instances is counted separately. You can run 750 hours of a Linux t3.micro, t2.micro, or t1.micro instance plus 750 hours of a Windows t3.micro, t2.micro, or t1.micro instance each month for the first 12 months.
