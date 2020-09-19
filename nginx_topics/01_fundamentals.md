@@ -253,3 +253,5 @@ user@host:/home/user$ ls -l file4
 -rwxrwxrwx  1 user user 0 Nov 19 20:13 file4
 user@host:/home/user$
 ```
+
+## Refernce to the file permission : https://help.ubuntu.com/community/FilePermissions
