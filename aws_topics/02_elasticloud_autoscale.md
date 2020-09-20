@@ -42,4 +42,12 @@ systemctl start httpd
 systemctl enable httpd
 echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
 ```
-AMIs that are eligible for the AWS Free Tier are marked in the Amazon EC2 Launch Wizard as Free tier eligible. The AWS Free Tier allotment for Linux and Microsoft Windows instances is counted separately. You can run 750 hours of a Linux t3.micro, t2.micro, or t1.micro instance plus 750 hours of a Windows t3.micro, t2.micro, or t1.micro instance each month for the first 12 months.
+# Cost of aws EC2 instance
+
+> AMIs that are eligible for the AWS Free Tier are marked in the Amazon EC2 Launch Wizard as Free tier eligible. The AWS Free Tier allotment for Linux and Microsoft Windows instances is counted separately. You can run 750 hours of a Linux t3.micro, t2.micro, or t1.micro instance plus 750 hours of a Windows t3.micro, t2.micro, or t1.micro instance each month for the first 12 months.
+
+
+# How to create ASG
+> Go to `Auto scaling group` in the aws console >> Create a new ASG >> Put a Name for the AsG group >> Create a template for the mentioned group >> Update the details in the the fields >> And now the tmplate is ready
+
+> Go got autoscaling configurations >> Add the name >> Update the loadbalacing configuration details >>
