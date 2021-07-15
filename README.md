@@ -2,8 +2,8 @@
 AWS Solutions Architect Certification Training Course
 
 
-#ASpache virtual host
-
+#Apache virtual host
+```
 <VirtualHost *:80>
     ServerName example.com
     ServerAlias www.example.com
@@ -23,3 +23,4 @@ AWS Solutions Architect Certification Training Course
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+```
